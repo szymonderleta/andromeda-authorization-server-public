@@ -1,0 +1,16 @@
+GET http://localhost:8443/api/v1/table/users?page=0&size=20&sortBy=userId&sortOrder=asc&usernameFilter=&emailFilter=
+X-Requesting-App: nebula_rest_api
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDAwMDExLHhic212dXpmYXl5emp4ZHhha0Bja3B0ci5jb20iLCJpc3MiOiJEYkNvbm5lY3Rpb25BcHAiLCJyb2xlcyI6W3siaWQiOjEsIm5hbWUiOiJST0xFX1VTRVIifSx7ImlkIjo0LCJuYW1lIjoiUk9MRV9BRE1JTiJ9XSwiaWF0IjoxNzQzODU3MDA2LCJleHAiOjE3NDM4NjA2MDZ9.R9s7rPSaj0QD7qPhlPLQ_KTjSX8krhSa3OxMxwOvnLzSC4_tKacMxEtkQqZs9XYyeOQTDAp8id_6yJFZel0ppQ
+
+# Examples
+# GET https://milkyway.local:8555/andromeda-authorization-server/api/v1/table/users?page=0&size=20&sortBy=userId&sortOrder=asc&usernameFilter=&emailFilter=
+# GET http://localhost:8443/api/v1/table/users?page=0&size=20&sortBy=userId&sortOrder=asc&usernameFilter=&emailFilter=
+
+# Example query parameters:
+# page=0               : First page (default 0)
+# size=20              : Number of items to return per page (default application size)
+# sortBy=userId        : Field to sort results, e.g., userId (default)
+# sortOrder=asc        : Sorting order: asc (ascending) or desc (descending, optional defaults to asc)
+# usernameFilter=      : Optional username filter
+# emailFilter=         : Optional email filter
+

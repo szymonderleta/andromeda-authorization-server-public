@@ -1,0 +1,13 @@
+### Endpoint to save a new user role.
+# Headers:
+#   - Content-Type: JSON data is expected in the request body.
+#   - X-Requesting-App: Identifies the application making the request (e.g., nebula_rest_api).
+#   - Authorization: Bearer token of the user performing the request (not the target userId).
+# Examples:
+#   POST https://milkyway.local:8555/andromeda-authorization-server/api/v1/table/user-role/{userId}/{roleId}
+#   POST http://localhost:8443/api/v1/table/table/user-role/998877/5
+
+POST http://localhost:8443/api/v1/table/user-role/998877/5
+Content-Type: application/json
+X-Requesting-App: nebula_rest_api
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDAwMDExLHhic212dXpmYXl5emp4ZHhha0Bja3B0ci5jb20iLCJpc3MiOiJEYkNvbm5lY3Rpb25BcHAiLCJyb2xlcyI6W3siaWQiOjEsIm5hbWUiOiJST0xFX1VTRVIifSx7ImlkIjo0LCJuYW1lIjoiUk9MRV9BRE1JTiJ9XSwiaWF0IjoxNzQzODU3MzkzLCJleHAiOjE3NDM4NjA5OTN9.Ey3Q-83LWq9bbT0vov2wyjBn7jBxRVpqp2rzZ8XI-brYuLmOFe4yVcdwjvmDS1fy_XalmFm3ttuq2nmXD3DMxg

@@ -1,0 +1,22 @@
+### Endpoint for user account registration.
+# Description:
+# - This endpoint is used to register a new user account in the system.
+# - The request body must include the following JSON fields:
+#     - `username`: The desired username for the new user, must be unique.
+#     - `password`: The desired password for the new user.
+#     - `email`: A valid email address associated with the user, must be unique.
+# - The `X-Requesting-App` header must identify the application making the request.
+
+# Endpoint URL:
+# - Production: https://milkyway.local:8555/andromeda-authorization-server/api/v1/public/account/register
+# - Localhost (for testing): http://localhost:8443/api/v1/public/account/register
+
+POST http://localhost:8443/api/v1/public/account/register
+Content-Type: application/json
+X-Requesting-App: nebula_rest_api
+
+{
+  "username": "testuser3",
+  "password": "password123",
+  "email": "testuser3@example.com"
+}

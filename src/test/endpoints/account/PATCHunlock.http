@@ -1,0 +1,15 @@
+### Endpoint for unlock account request, result is email sended with unlock link.
+# Description:
+# - This endpoint is used to request the unlocking of a user account.
+# - Upon a successful request, an email will be sent to the user with an unlock link.
+# - The `{userId}` path variable represents the unique ID of the user whose account is to be unlocked.
+# - The `X-Requesting-App` header is required and must identify the application initiating the request.
+
+# Endpoint URL:
+# - Production: https://milkyway.local:8555/andromeda-authorization-server/api/v1/public/account/unlock/{userId}
+# - Localhost (for testing): http://localhost:8443/api/v1/public/account/unlock/1000013
+
+PATCH http://localhost:8443/api/v1/public/account/unlock/1000013
+Content-Type: application/json
+X-Requesting-App: nebula_rest_api
+

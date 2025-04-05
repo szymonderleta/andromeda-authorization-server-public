@@ -1,0 +1,8 @@
+GET http://localhost:8443/api/v1/table/tokens/confirmation/10
+X-Requesting-App: nebula_rest_api
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDAwMDExLHhic212dXpmYXl5emp4ZHhha0Bja3B0ci5jb20iLCJpc3MiOiJEYkNvbm5lY3Rpb25BcHAiLCJyb2xlcyI6W3siaWQiOjEsIm5hbWUiOiJST0xFX1VTRVIifSx7ImlkIjo0LCJuYW1lIjoiUk9MRV9BRE1JTiJ9XSwiaWF0IjoxNzQzODUwNDYzLCJleHAiOjE3NDM4NTQwNjN9.DWeK2yFRyEJID43I5TTRsJxHSALgj2YMiZRY4Ib2b7TlNqVrWQi4CrLv5KXMl71T0H9IGwuUqzqVVqRWKiva4g
+
+# Examples
+# GET https://milkyway.local:8555/andromeda-authorization-server/api/v1/table/tokens/confirmation/10
+# GET http://localhost:8443/api/v1/table/tokens/confirmation/10
+
