@@ -1,10 +1,9 @@
 Andromeda Authorization Server
 
-Author: Szymon Derleta
-Current Version: 3.0.0 Beta Release
+Author: Szymon Derleta  
+Current Version: 3.0.0
 
-Changelog
-Version 3.0.0 Beta Release:
+Changelog for version 3.0.0:
 
 1. **Added over 500 JUnit and integration tests**: Enhanced the reliability and robustness of the application by
    ensuring comprehensive test coverage across all key components.
