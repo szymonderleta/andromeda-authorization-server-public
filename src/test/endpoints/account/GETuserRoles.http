@@ -1,0 +1,16 @@
+### Endpoint
+# Description:
+# - This endpoint is used to fetch details of a user account based on provided query parameters.
+# - The query parameters that must be included in the URL are:
+#     - `username`: The username of the account being queried.
+#     - `email`: The email address associated with the account.
+# - The `X-Requesting-App` header identifies the application making the request.
+# - This is a publicly accessible endpoint and typically does not require authentication.
+
+# Endpoint URL:
+# - Production: https://milkyway.local:8555/andromeda-authorization-server/api/v1/public/account?username=testuser&&email=testuser@example.com
+# - Localhost (for testing): http://localhost:8443/api/v1/public/account?username=testuser&&email=testuser@example.com
+
+GET http://localhost:8443/api/v1/public/account?username=testuser&email=testuser@example.com
+Content-Type: application/json
+X-Requesting-App: nebula_rest_api

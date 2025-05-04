@@ -1,0 +1,13 @@
+### Endpoint to delete role.
+# Headers:
+#   - Content-Type: JSON data is expected in the request body.
+#   - X-Requesting-App: Identifies the application making the request (e.g., nebula_rest_api).
+#   - Authorization: Bearer token of the user performing the request (not the target userId).
+# Examples:
+#   DELETE https://milkyway.local:8555/andromeda-authorization-server/api/v1/table/users/{roleId}
+#   DELETE http://localhost:8443/api/v1/table/table/users/{roleId}
+
+DELETE http://localhost:8443/api/v1/table/users/1000014
+Content-Type: application/json
+X-Requesting-App: nebula_rest_api
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDAwMDExLHhic212dXpmYXl5emp4ZHhha0Bja3B0ci5jb20iLCJpc3MiOiJEYkNvbm5lY3Rpb25BcHAiLCJyb2xlcyI6W3siaWQiOjEsIm5hbWUiOiJST0xFX1VTRVIifSx7ImlkIjo0LCJuYW1lIjoiUk9MRV9BRE1JTiJ9XSwiaWF0IjoxNzQzODU4MTA1LCJleHAiOjE3NDM4NjE3MDV9.lBt4WnUAWpdwxU2OcDer3ZLIVKo7j1SqaeJXM87ohuOQlDVuD4eyEy9pdk4Pmrf4y4BoLKeeVd17Fb_KJvJ-4g

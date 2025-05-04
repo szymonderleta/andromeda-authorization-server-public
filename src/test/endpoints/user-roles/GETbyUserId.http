@@ -1,0 +1,12 @@
+GET http://localhost:8443/api/v1/table/user-roles/4?roleId=userId&sortOrder=asc&roleNameFilter=
+X-Requesting-App: nebula_rest_api
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDAwMDExLHhic212dXpmYXl5emp4ZHhha0Bja3B0ci5jb20iLCJpc3MiOiJEYkNvbm5lY3Rpb25BcHAiLCJyb2xlcyI6W3siaWQiOjEsIm5hbWUiOiJST0xFX1VTRVIifSx7ImlkIjo0LCJuYW1lIjoiUk9MRV9BRE1JTiJ9XSwiaWF0IjoxNzQzODU3MDA2LCJleHAiOjE3NDM4NjA2MDZ9.R9s7rPSaj0QD7qPhlPLQ_KTjSX8krhSa3OxMxwOvnLzSC4_tKacMxEtkQqZs9XYyeOQTDAp8id_6yJFZel0ppQ
+
+# Examples
+# GET https://milkyway.local:8555/andromeda-authorization-server/api/v1/table/user-roles/{userId}?roleId=userId&sortOrder=asc&roleNameFilter=
+# GET http://localhost:8443/api/v1/table/user-roles/4?roleId=userId&sortOrder=asc&roleNameFilter=
+
+# Example query parameters:
+# sortBy=roleId        : Field to sort results, e.g., roleId (default)
+# sortOrder=asc        : Sorting order: asc (ascending) or desc (descending, optional defaults to asc)
+# roleNameFilter=      : Optional role name filter

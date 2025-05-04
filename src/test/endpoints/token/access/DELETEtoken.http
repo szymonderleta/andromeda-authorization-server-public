@@ -1,0 +1,16 @@
+### Endpoint to delete existing access token.
+# Authorization: Requires one of the following roles: Admin.
+# Path variable {tokenId}: Identifies the owner of the token being deleted.
+# Path variable {userId}: Identifies the token id being deleted.
+# Headers:
+#   - Content-Type: JSON data is expected in the request body.
+#   - X-Requesting-App: Identifies the application making the request (e.g., nebula_rest_api).
+#   - Authorization: Bearer token of the user performing the request (not the target userId).
+# Examples:
+#   DELETE https://milkyway.local:8555/andromeda-authorization-server/api/v1/table/tokens/access/{tokenId}/{userId}
+#   DELETE https://milkyway.local:8555/andromeda-authorization-server/api/v1/table/tokens/access/492/2
+#   DELETE http://localhost:8443/api/v1/table/tokens/access/492/2
+DELETE http://localhost:8443/api/v1/table/tokens/access/491/2
+Content-Type: application/json
+X-Requesting-App: nebula_rest_api
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDAwMDExLHhic212dXpmYXl5emp4ZHhha0Bja3B0ci5jb20iLCJpc3MiOiJEYkNvbm5lY3Rpb25BcHAiLCJyb2xlcyI6W3siaWQiOjEsIm5hbWUiOiJST0xFX1VTRVIifSx7ImlkIjo0LCJuYW1lIjoiUk9MRV9BRE1JTiJ9XSwiaWF0IjoxNzQzODUyMjY3LCJleHAiOjE3NDM4NTU4Njd9.iq4QbR6wI5pGR6Snzu6Vu3Yl9HbnGHQ4Ru2k87J4329MSox45sp4677_eY30hUOssA2pze0rgB919mJmhskBfA
