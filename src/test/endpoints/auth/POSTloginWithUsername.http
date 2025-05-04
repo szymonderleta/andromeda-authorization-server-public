@@ -1,0 +1,19 @@
+### Endpoint for user login to obtain an authentication and refresh tokens.
+# Description:
+# - This endpoint is used to authenticate a user and retrieve a bearer token required for further API requests.
+# - The `login` and `password` fields must be provided in the request body as JSON.
+# - Ensure that the `X-Requesting-App` header identifies the application making the request.
+# - A successful response will contain an authentication token (e.g., JWT) in the response body.
+
+# Endpoint URL:
+# - Production: https://milkyway.local:8555/andromeda-authorization-server/api/v1/auth/login
+# - Localhost: http://localhost:8443/api/v1/auth/login
+
+POST http://localhost:8443/api/v1/auth/login
+Content-Type: application/json
+X-Requesting-App: nebula_rest_api
+
+{
+  "login": "xbsmvuzfayyzjxdxak",
+  "password": "cStbkrsp}B3VxD."
+}

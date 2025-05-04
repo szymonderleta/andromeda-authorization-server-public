@@ -1,0 +1,20 @@
+### Endpoint to save a custom refresh token for a user.
+# Authorization: Requires one of the following roles: Admin, Tester, or Moderator.
+# Path variable {userId}: Identifies the owner of the token being saved.
+# Headers:
+#   - Content-Type: JSON data is expected in the request body.
+#   - X-Requesting-App: Identifies the application making the request (e.g., nebula_rest_api).
+#   - Authorization: Bearer token of the user performing the request (not the target userId).
+# Examples:
+#   POST https://milkyway.local:8555/andromeda-authorization-server/api/v1/table/tokens/refresh/{userId}
+#   POST https://milkyway.local:8555/andromeda-authorization-server/api/v1/table/tokens/refresh/2
+#   POST http://localhost:8443/api/v1/table/tokens/refresh/2
+
+POST http://localhost:8443/api/v1/table/tokens/refresh/2
+Content-Type: application/json
+X-Requesting-App: nebula_rest_api
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDAwMDExLHhic212dXpmYXl5emp4ZHhha0Bja3B0ci5jb20iLCJpc3MiOiJEYkNvbm5lY3Rpb25BcHAiLCJyb2xlcyI6W3siaWQiOjEsIm5hbWUiOiJST0xFX1VTRVIifSx7ImlkIjo0LCJuYW1lIjoiUk9MRV9BRE1JTiJ9XSwiaWF0IjoxNzQzODUxNDgxLCJleHAiOjE3NDM4NTUwODF9.jC-kRR7X5O3087Up5j1yjiRcVoC5-km46QsrJUPe8mqPvWhrqtw71pl7wm9Pw9o5ZqxFiX0vKgvvrx9UIafy1A
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+}

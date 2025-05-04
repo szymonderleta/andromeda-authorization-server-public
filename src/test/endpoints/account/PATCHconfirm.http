@@ -1,0 +1,20 @@
+### Endpoint for confirmation account.
+# Description:
+# - This endpoint is used to confirm account in the system.
+# - The request body must include the following JSON fields:
+#     - `tokenId`: The desired username for the new user, must be unique.
+#     - `token`: The desired password for the new user.
+# - The `X-Requesting-App` header must identify the application making the request.
+
+# Endpoint URL:
+# - Production: https://milkyway.local:8555/andromeda-authorization-server/api/v1/public/account/confirm
+# - Localhost (for testing): http://localhost:8443/api/v1/public/account/confirm
+
+PATCH http://localhost:8443/api/v1/public/account/confirm
+Content-Type: application/json
+X-Requesting-App: nebula_rest_api
+
+{
+  "tokenId": 18,
+  "token": "ljY38GXlRz822f3qKpWaTP7w6WWqByh5NMpdg0CPgr2Nc4llikKc8WWu6w47phd1gEBlkGMRiPo89vFGlvc9tJGWXfXeEwAiBcCZ"
+}
