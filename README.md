@@ -1,28 +1,18 @@
 # Andromeda Authorization Server
 
-Author: Szymon Derleta
-Current Version: 3.1.0 Beta Release
-Repository: [GitHub - Andromeda Authorization Server](https://github.com/szymonderleta/andromeda-authorization-server-public)
+<div align="left">
 
-Current Jenkins Configuration: [JENKINS.MD](https://github.com/szymonderleta/andromeda/blob/main/apps/andromeda/andromeda-auth-server/info/JENKINS.MD)
+![Author](https://img.shields.io/badge/Author-Szymon%20Derleta-white?style=for-the-badge)
 
-## Changelog
+![Release](https://img.shields.io/badge/Release-Public%20Release-green?style=for-the-badge)  
+![Version](https://img.shields.io/badge/Version-3.1.1-green?style=for-the-badge)
 
-Version 3.1.0:
+📄 Changelog: [CHANGELOG.md](info/CHANGELOG.md)  
+🔗 Repository: [GitHub - Andromeda Authorization Server](https://github.com/szymonderleta/andromeda-authorization-server-public)  
+🛠️ Jenkins Pipeline: [JENKINS.MD](info/JENKINS.MD)
+</div>
 
-1. **Added endpoint for handling access token refresh/generation based on refreshToken cookie.**
-2. **Modified and fixed issues with incorrect cookie expiration dates.**
-3. **Updated unit tests**
-
-Version 3.0.0 Beta Release:
-
-1. **Added over 500 JUnit and integration tests**: Enhanced the reliability and robustness of the application by
-   ensuring comprehensive test coverage across all key components.
-2. **Rebuilt the codebase**: Refactored and optimized the existing code for improved performance, maintainability, and
-   scalability.
-3. **Added support for refresh tokens**: Implemented support for secure refresh tokens. Both access and refresh tokens
-   are now generated as `HttpOnly` cookies to enhance security and prevent client-side access.
-
+---
 ## Overview
 
 Andromeda Authorization Server is a robust and versatile application built with Java SDK 21 and the advanced Spring Boot
@@ -48,6 +38,7 @@ functionality. Some of them might need to be removed or restricted for security 
 review all endpoints thoroughly, especially those handling sensitive data or authentication, to avoid potential
 vulnerabilities.
 
+---
 ## Endpoints Examples:
 
 This application supports and issues JWT-based cookies for accessToken and refreshToken. These tokens are used for authentication and session management. The accessToken provides authorization for accessing protected resources, while the refreshToken allows the renewal of the accessToken when it expires.
@@ -64,6 +55,7 @@ Cookie: refreshToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDAwMDExLHhic212dXpmYXl5em
 
 Examples of endpoints in the form of .http files supported by the IntelliJ environment can be found at the location test/endpoints.
 
+---
 ## Building the Project
 
 To build the Andromeda Authorization Server project, follow the steps below:
